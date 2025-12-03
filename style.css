@@ -1,0 +1,144 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(to right, #fceabb, #f8b500);
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background: #ff69b4;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo-img {
+    width: 80px;
+    height: auto;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffe4e1;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.section {
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff69b4;
+    border-bottom: 3px solid #ff69b4;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    margin-top: 15px;
+    font-size: 1.4em;
+    color: #f86ca7;
+}
+
+p {
+    margin-top: 10px;
+}
+
+.sobre-img {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.servicos-lista {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.servico {
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.servico:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.img-servico {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #ff69b4;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+}
+
+a {
+    color: #ff69b4;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Responsividade extra */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 10px;
+    }
+
+    .container {
+        padding: 15px;
+    }
+}
